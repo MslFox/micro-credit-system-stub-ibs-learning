@@ -35,7 +35,8 @@ java -Xms2g -Xmx4g -jar target/stub-0.0.1-SNAPSHOT.jar --spring.profiles.active=
 |----------|------|--------------------------------------------------------------------------------------------|------------------------------------------------------------------|
 | default* | 8080 | [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html) | [http://localhost:8080/actuator](http://localhost:8080/actuator) |
 | test1*   | 7770 | [http://localhost:7770/swagger-ui/index.html](http://localhost:7770/swagger-ui/index.html) | [http://localhost:7770/actuator](http://localhost:7770/actuator) |
-| test2*   | 7775 | [http://localhost:7775/swagger-ui/index.html](http://localhost:7775/swagger-ui/index.html) | [http://localhost:7775/actuator](http://localhost:7775/actuator) |
+| test2*   | 7775 | [http://localhost:7775/swagger-ui/index.html](http://localhost:7775/swagger-ui/index.html) | [http://localhost:7775/actuator](http://localhost:7775/actuator) |\
+
 ***\*Тестирование DELETE /v1/transactions/cleare/{id} с промежуточным ответом HTTP 100***
 ```
 при запросе использовать заголовок `Expect: 100-continue`
