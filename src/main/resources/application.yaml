@@ -1,0 +1,31 @@
+spring:
+  application.name: stub
+  datasource:
+    url: jdbc:h2:file:./local/default/stub_db
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+server:
+  port: 8080
+
+logging:
+  file:
+    name: logs/default/stub.log
+  level:
+    root: INFO
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+stub:
+  delay-seconds: 1

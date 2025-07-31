@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./local/test1/stub_db_test1
+server:
+  port: 7770
+logging:
+  file:
+    name: logs/test1/stub.log
+
+stub:
+  delay-seconds: 2
