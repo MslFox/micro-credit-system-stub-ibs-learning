@@ -20,8 +20,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @Tag(name = "Управление транзакциями")
 public class TransactionController {
-    @Value("${stub.delay:1}")
+    @Value("${stub.delay-seconds:1}")
     private int delay;
+
     private final TransactionalService transactionalService;
 
     @Operation(summary = "Удалить транзакцию процессинга",
